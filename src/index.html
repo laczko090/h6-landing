@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3.CSS Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top w3-hide-small">
+		<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+			<a href="#" class="w3-bar-item w3-button">Kezdőlap</a>
+			<a href="#menu" class="w3-bar-item w3-button">Heti menü</a>
+			<a href="#about" class="w3-bar-item w3-button">Rólunk</a>
+			<a href="#myMap" class="w3-bar-item w3-button">Elérhetőség</a>
+		</div>
+	</div>
+	<!-- Header with image -->
+	<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+		<div class="w3-display-bottomleft w3-padding">
+			<span class="w3-tag w3-xlarge">Nyitva H-P 8.00 - 17.00</span>
+		</div>
+		<div class="w3-display-middle w3-center">
+			<span class="w3-text-white home__text">Harap6<br>Falatozó</span>
+			<p><a href="#menu" class="w3-button w3-xxlarge w3-black">Vigyél a heti menüre</a></p>
+		</div>
+	</header>
+	<!-- Menu Container -->
+	<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+		<div class="w3-content">
+			<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Heti menü</h1>
+			<div class="w3-row w3-center w3-border w3-border-dark-grey">
+				<a href="javascript:void(0)" onclick="openMenu(event, 'monday_menu');" id="monday">
+					<div class="w3-col s2 tablink w3-padding-large w3-hover-red">H<span class="menu__day-detail">étfő</span></div>
+				</a>
+				<a href="javascript:void(0)" onclick="openMenu(event, 'tuesday_menu');" id="tuesday">
+					<div class="w3-col s2 tablink w3-padding-large w3-hover-red">K<span class="menu__day-detail">edd</span></div>
+				</a>
+				<a href="javascript:void(0)" onclick="openMenu(event, 'wednesday_menu');" id="wednesday">
+					<div class="w3-col s2 tablink w3-padding-large w3-hover-red">Sz<span class="menu__day-detail">erda</span></div>
+				</a>
+				<a href="javascript:void(0)" onclick="openMenu(event, 'thursday_menu');" id="thursday">
+					<div class="w3-col s2 tablink w3-padding-large w3-hover-red">Cs<span class="menu__day-detail">ütörtök</span></div>
+				</a>
+				<a href="javascript:void(0)" onclick="openMenu(event, 'friday_menu');" id="friday">
+					<div class="w3-col s2 tablink w3-padding-large w3-hover-red">P<span class="menu__day-detail">éntek</span></div>
+				</a>
+			</div>
+			<div id="monday_menu" class="w3-container menu w3-padding-32 w3-white">
+				<div class="menu__item-container">
+					<h1><b>Gulyásleves</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">950HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+			</div>
+			<div id="tuesday_menu" class="w3-container menu w3-padding-32 w3-white">
+				<div class="menu__item-container">
+					<h1><b>Gulyásleves</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">950HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+			</div>
+			<div id="wednesday_menu" class="w3-container menu w3-padding-32 w3-white">
+				<div class="menu__item-container">
+					<h1><b>Gulyásleves</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">950HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+			</div>
+			<div id="thursday_menu" class="w3-container menu w3-padding-32 w3-white">
+				<div class="menu__item-container">
+					<h1><b>Gulyásleves</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">950HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+			</div>
+			<div id="friday_menu" class="w3-container menu w3-padding-32 w3-white">
+				<div class="menu__item-container">
+					<h1><b>Gulyásleves</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">950HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+				<hr>
+				<div class="menu__item-container">
+					<h1><b>Paknkómorzás csirkemell, kukoricás rizs</b></h1>
+					<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">1790HUF</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About Container -->
+	<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+		<div class="w3-content">
+			<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Rólunk</h1>
+			<p>
+				Falatozónk kínálatát házias ízek jellemzik, az adagok bőségesek és jókedvű a kiszolgálás. Szeretettel várjuk kedves vendégeinket minden munkanap Alsónémediben a GLS telephelyén. Hetente frissülő étlappal, naponta változó ételekkel. <br />Ételeinkre előrendelést felveszünk, rendezvényekre kiszállítunk és nagyobb rendelés esetén behatárolt területen belül házhoz szállítunk.
+			</p>
+			<div class="w3-row">
+				<div class="w3-col m3 s12 about-icon">
+					<img src="../assets/credit.png" alt="credit card" />
+					<p>Bankkártya/SZÉP kártya elfogadóhely</p>
+				</div>
+				<div class="w3-col m3 s12 about-icon">
+					<img src="../assets/like.png" alt="hearth" />
+					<p>Kedves kiszolgálás</p>
+				</div>
+				<div class="w3-col m3 s12 about-icon">
+					<img src="../assets/food.png" alt="food" />
+					<p>Házias ízek</p>
+				</div>
+				<div class="w3-col m3 s12 about-icon">
+					<img src="../assets/order.png" alt="order" />
+					<p>Rendelés felvétel</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact -->
+	<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+		<div class="w3-content">
+			<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Elérhetőségünk</h1>
+			<div class="w3-row">
+				<div class="w3-col m6 s12">
+					<h1><b>Kapcsolat</b></h1>
+					<p>Telefonszám: 05050515-122330</p>
+					<p>E-mail: 05050515-122330</p>
+					<h1><b>Nyitvatartás</b></h1>
+					<p>Hétfőtől - Pénteking 08.00 - 17.00</p>
+					<p>Hétvégén és ünnepnapokon - Zárva</p>
+				</div>
+				<div class="w3-col m6 s12">
+					<h1><b>Címünk</b></h1>
+					<p>Alsónémedi, GLS Európa u. 2, 2351 - hátsó porta mellett</p>
+					<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=19.154427051544193%2C47.33837192067934%2C19.17245149612427%2C47.34844798534426&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=16/47.3434/19.1634&amp;layers=N">Nagyobb térkép</a></small>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+	</footer>
+	<script>
+		// Tabbed Menu
+		function openMenu(evt, menuName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("menu");
+
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+			}
+			document.getElementById(menuName).style.display = "block";
+			evt.currentTarget.firstElementChild.className += " w3-red";
+		}
+
+		const workDays = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+		const currentDay = new Date().getDay();
+		const isWorkingDay = currentDay < 6 && currentDay > 0;
+
+		if(isWorkingDay) {
+			document.getElementById(workDays[currentDay - 1]).click();
+		}
+	</script>
+
+</body>
+
+</html>

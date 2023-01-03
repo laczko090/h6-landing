@@ -1,0 +1,70 @@
+body,
+html {
+	height: 100%
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Amatic SC", sans-serif
+}
+
+.menu {
+	display: none
+}
+
+.bgimg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-image: url("./assets/main_image.jpg");
+	min-height: 90%;
+}
+
+.home__text {
+	font-size: 3.75rem;
+}
+
+.menu__day-detail {
+	display: none;
+}
+
+.menu__item-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.menu__item-price {
+	margin-left: auto;
+}
+
+.about-icon {
+	text-align: center;
+}
+
+.about-icon img {
+	max-width: 50%;
+	min-width: 130px;
+}
+
+@media only screen and (min-width: 650px) {
+  .home__text {
+		font-size: 6.25rem;
+	}
+
+	.menu__day-detail {
+		display: inline;
+	}
+
+	.about-icon img {
+		max-width: 80%;
+	}
+}
+
+
