@@ -169,12 +169,12 @@
 					<p>Bankkártya/SZÉP kártya elfogadóhely</p>
 				</div>
 				<div class="w3-col m3 s12 about-icon">
-					<img src="./assets/like.png" alt="hearth" />
-					<p>Kedves kiszolgálás</p>
-				</div>
-				<div class="w3-col m3 s12 about-icon">
 					<img src="./assets/food.png" alt="food" />
 					<p>Házias ízek</p>
+				</div>
+				<div class="w3-col m3 s12 about-icon">
+					<img src="./assets/buffet.png" alt="hearth" />
+					<p>Céges rendezvények</p>
 				</div>
 				<div class="w3-col m3 s12 about-icon">
 					<img src="./assets/order.png" alt="order" />
@@ -190,8 +190,8 @@
 			<div class="w3-row">
 				<div class="w3-col m6 s12">
 					<h1><b>Kapcsolat</b></h1>
-					<p>Telefonszám: 05050515-122330</p>
-					<p>E-mail: 05050515-122330</p>
+					<p>Telefonszám: +3620/512-5792</p>
+					<p>E-mail: spmagdolna@gmail.com</p>
 					<h1><b>Nyitvatartás</b></h1>
 					<p>Hétfőtől - Pénteking 08.00 - 17.00</p>
 					<p>Hétvégén és ünnepnapokon - Zárva</p>
@@ -230,6 +230,8 @@
 
 		if(isWorkingDay) {
 			document.getElementById(workDays[currentDay - 1]).click();
+		} else {
+			document.getElementById(workDays[0]).click();
 		}
 	</script>
 
