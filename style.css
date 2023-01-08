@@ -14,6 +14,10 @@ h6 {
 	font-family: "Jura", sans-serif
 }
 
+h1 {
+	font-size: 26px;
+}
+
 .menu {
 	display: none
 }
@@ -55,9 +59,31 @@ h6 {
 }
 
 .w3-jumbo {
-	font-size: 45px!important;
+	font-size: 35px!important;
 }
 
+.w3-col.s3 {
+	width: 23.99999%;
+}
+
+.tablink {
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 350px) {
+  .w3-jumbo {
+		font-size: 45px!important;
+	}
+
+	.w3-col.s3 {
+		width: 24.99999%;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+}
 
 @media only screen and (min-width: 650px) {
   .home__text {
@@ -72,5 +98,4 @@ h6 {
 		font-size: 64px!important;
 	}
 }
-
 
