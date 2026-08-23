@@ -127,14 +127,18 @@
 			['monday', 'tuesday', 'wednesday', 'thursday', 'friday'].forEach(day => {
 				if(data[day]) {
 					data[day].forEach((food, idx) => {
-						const element = document.getElementById(`${day}_menu`);
-						element.insertAdjacentHTML('beforeend',`
-							${idx === 0 ? '' : '<hr>'}
-							<div class="menu__item-container">
-								<span><b>${food.foodName}</b></span>
-								<span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">${food.foodPrice}HUF</span>
-							</div>`)
-					})
+					  const element = document.getElementById(`${day}_menu`);
+					
+					  element.insertAdjacentHTML('beforeend', `
+					    ${idx === 0 ? '' : '<hr>'}
+					    <div class="menu__item-container">
+					      <span><b>${food.name}</b></span>
+					      <span class="w3-right w3-tag w3-dark-grey w3-round menu__item-price">
+					        ${food.price} HUF
+					      </span>
+					    </div>
+					  `);
+					});
 				}
 			})
 		})();
